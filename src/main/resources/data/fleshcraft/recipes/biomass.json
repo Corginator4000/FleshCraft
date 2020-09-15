@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fleshcraft:biomass_block"
+    }
+  ],
+  "result":
+  {
+    "item": "fleshcraft:biomass",
+    "count": 4
+  }
+}

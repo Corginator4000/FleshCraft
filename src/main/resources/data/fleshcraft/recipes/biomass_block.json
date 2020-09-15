@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx",
+    "xx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "fleshcraft:biomass"
+    }
+  },
+  "result":
+  {
+    "item": "fleshcraft:biomass_block",
+    "count": 1
+  }
+}
