@@ -1,5 +1,6 @@
 {
   "item.fleshcraft.biomass" : "Biomass",
+  "item.fleshcraft.akuloth_worm" : "Akuloth Worm",
   "block.fleshcraft.biomass_block" : "Block of Biomass",
   "itemGroup.fleshcraftTab" : "FleshCraft"
 }
