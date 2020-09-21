@@ -6,8 +6,12 @@ import com.Corginator4000.fleshcraft.blocks.BlockItemBase;
 import com.Corginator4000.fleshcraft.items.AkulothWorm;
 import com.Corginator4000.fleshcraft.items.ItemBase;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
+import net.minecraftforge.fluids.FluidAttributes;
+import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -38,4 +42,8 @@ public class RegistryHandler
     public static final RegistryObject<Item> BIOMASS_BLOCK_ITEM = ITEMS.register("biomass_block", () -> new BlockItemBase(BIOMASS_BLOCK.get()));
 
     // Fluids
+    //public static final RegistryObject<FlowingFluid> BLOOD_FLUID = FLUIDS.register("blood_fluid", );
+
+    // Flowing Fluids
+
 }
