@@ -3,7 +3,7 @@ package com.Corginator4000.fleshcraft.util;
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.blocks.BiomassBlock;
 import com.Corginator4000.fleshcraft.blocks.BlockItemBase;
-import com.Corginator4000.fleshcraft.fluids.FluidSetup;
+import com.Corginator4000.fleshcraft.fluids.FluidResources;
 import com.Corginator4000.fleshcraft.items.AkulothWorm;
 import com.Corginator4000.fleshcraft.items.ItemBase;
 import net.minecraft.block.Block;
@@ -13,7 +13,6 @@ import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
-import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -46,10 +45,10 @@ public class RegistryHandler
 
     // Fluids
     public static final RegistryObject<FlowingFluid> BLOOD_FLUID = FLUIDS.register("blood_fluid",
-            () -> new ForgeFlowingFluid.Source(FluidSetup.BLOOD_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(FluidResources.BLOOD_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> BLOOD_FLOWING = FLUIDS.register("blood_flowing",
-            () -> new ForgeFlowingFluid.Flowing(FluidSetup.BLOOD_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(FluidResources.BLOOD_PROPERTIES));
 
     // Fluid Block
     public static final RegistryObject<FlowingFluidBlock> BLOOD_BLOCK = BLOCKS.register("blood",
