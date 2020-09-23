@@ -50,13 +50,27 @@ public class RegistryHandler
     public static final RegistryObject<FlowingFluid> BLOOD_FLOWING = FLUIDS.register("blood_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidResources.BLOOD_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> DIGESTIVE_FLUID = FLUIDS.register("digestive_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidResources.DIGESTIVE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> DIGESTIVE_FLOWING = FLUIDS.register("digestive_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidResources.DIGESTIVE_PROPERTIES));
+
     // Fluid Block
     public static final RegistryObject<FlowingFluidBlock> BLOOD_BLOCK = BLOCKS.register("blood",
             () -> new FlowingFluidBlock(() -> BLOOD_FLUID.get(), Block.Properties.create(Material.WATER)
                     .doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops()));
 
+    public static final RegistryObject<FlowingFluidBlock> DIGESTIVE_BLOCK = BLOCKS.register("digestive_acid",
+            () -> new FlowingFluidBlock(() -> DIGESTIVE_FLUID.get(), Block.Properties.create(Material.LAVA)
+                    .doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops()));
+
     // Fluid Bucket
     public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket",
             () -> new BucketItem(() -> BLOOD_FLUID.get(),
+                    new Item.Properties().group(FleshCraft.TAB).maxStackSize(16)));
+
+    public static final RegistryObject<BucketItem> DIGESTIVE_BUCKET = ITEMS.register("digestive_acid_bucket",
+            () -> new BucketItem(() -> DIGESTIVE_FLUID.get(),
                     new Item.Properties().group(FleshCraft.TAB).maxStackSize(16)));
 }
