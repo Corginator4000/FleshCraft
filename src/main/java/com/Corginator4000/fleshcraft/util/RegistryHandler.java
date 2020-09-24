@@ -6,6 +6,7 @@ import com.Corginator4000.fleshcraft.blocks.BlockItemBase;
 import com.Corginator4000.fleshcraft.fluids.FluidResources;
 import com.Corginator4000.fleshcraft.items.AkulothWorm;
 import com.Corginator4000.fleshcraft.items.ItemBase;
+import com.Corginator4000.fleshcraft.library.registration.TileEntityTypeDeferredRegister;
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.material.Material;
@@ -13,6 +14,7 @@ import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -24,6 +26,8 @@ public class RegistryHandler
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FleshCraft.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, FleshCraft.MOD_ID);
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, FleshCraft.MOD_ID);
+
+    public static final TileEntityTypeDeferredRegister TILE_ENTITIES = new TileEntityTypeDeferredRegister(FleshCraft.MOD_ID);
 
 
     public static void Init()
