@@ -1,6 +1,6 @@
 package com.Corginator4000.fleshcraft.library.mantle.multiblock;
 
-import com.Corginator4000.fleshcraft.library.tileentity.FleshCraftTileEntity;
+import com.Corginator4000.fleshcraft.library.mantle.tileentity.MantleTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.nbt.CompoundNBT;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Objects;
 
-public class MultiServantLogic extends FleshCraftTileEntity  implements IServantLogic {
+public class MultiServantLogic extends MantleTileEntity implements IServantLogic {
 
     boolean hasMaster;
     BlockPos master;

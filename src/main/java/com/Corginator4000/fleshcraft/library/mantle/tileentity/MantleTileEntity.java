@@ -1,11 +1,11 @@
-package com.Corginator4000.fleshcraft.library.tileentity;
+package com.Corginator4000.fleshcraft.library.mantle.tileentity;
 
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 
-public class FleshCraftTileEntity extends TileEntity {
+public class MantleTileEntity extends TileEntity {
 
-    public FleshCraftTileEntity(TileEntityType<?> tileEntityTypeIn) {
+    public MantleTileEntity(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
     }
 

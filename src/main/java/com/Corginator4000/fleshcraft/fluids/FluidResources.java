@@ -3,7 +3,6 @@ package com.Corginator4000.fleshcraft.fluids;
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.util.RegistryHandler;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
@@ -24,9 +23,9 @@ public class FluidResources {
 
     public static final ForgeFlowingFluid.Properties BLOOD_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> RegistryHandler.BLOOD_FLUID.get(), () -> RegistryHandler.BLOOD_FLOWING.get(),
-            FluidAttributes.builder(LIQUID_STILL, LIQUID_FLOWING).color(0xffD10000).density(1200)
-                    .viscosity(1200).temperature(336).sound(SoundEvents.BLOCK_WATER_AMBIENT))
-                    .block(() -> RegistryHandler.BLOOD_BLOCK.get()).bucket(() -> RegistryHandler.BLOOD_BUCKET.get());
+            FluidAttributes.builder(LIQUID_STILL, LIQUID_FLOWING).color(0xffD10000).density(1200).viscosity(1200)
+                    .temperature(336).sound(SoundEvents.BLOCK_WATER_AMBIENT))
+            .block(() -> RegistryHandler.BLOOD_BLOCK.get()).bucket(() -> RegistryHandler.BLOOD_BUCKET.get());
 
     public static final ForgeFlowingFluid.Properties DIGESTIVE_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> RegistryHandler.DIGESTIVE_FLUID.get(), () -> RegistryHandler.DIGESTIVE_FLOWING.get(),
