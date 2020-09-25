@@ -1,6 +1,6 @@
 {
     "textures": {
-        "particle": "tconstruct:block/fluid/molten_still"
+        "particle": "fleshcraft:block/fluid/molten_still"
     }
 }
 

@@ -1,6 +1,6 @@
 {
     "textures": {
-        "particle": "tconstruct:block/fluid/milk_still"
+        "particle": "fleshcraft:block/fluid/milk_still"
     }
 }
 

@@ -3,7 +3,10 @@
   "item.fleshcraft.akuloth_worm": "Akuloth Worm",
   "item.fleshcraft.blood_bucket": "Bucket of Blood",
   "item.fleshcraft.digestive_acid_bucket": "Bucket of Digestive Fluid",
+  "item.fleshcraft.bile_bucket": "Bucket of Bile",
   "item.fleshcraft.blood": "Blood",
+  "item.fleshcraft.digestive_acid": "Digestive Acid",
+  "item.fleshcraft.bile": "Bile",
   "block.fleshcraft.biomass_block": "Block of Biomass",
   "block.fleshcraft.epithelial_tissue": "Epithelial Tissue",
   "itemGroup.fleshcraftTab": "FleshCraft"

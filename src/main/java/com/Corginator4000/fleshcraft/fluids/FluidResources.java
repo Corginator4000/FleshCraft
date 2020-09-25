@@ -2,12 +2,16 @@ package com.Corginator4000.fleshcraft.fluids;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.util.RegistryHandler;
+import net.minecraft.block.material.Material;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
 public class FluidResources {
+
+    public static final ResourceLocation BLOOD_STILL = new ResourceLocation(FleshCraft.MOD_ID, "block/fluid/blood_still");
+    public static final ResourceLocation BLOOD_FLOWING = new ResourceLocation(FleshCraft.MOD_ID, "block/fluid/blood_flowing");
 
     public static final ResourceLocation LIQUID_STILL = new ResourceLocation(FleshCraft.MOD_ID, "block/fluid/liquid_still");
     public static final ResourceLocation LIQUID_FLOWING = new ResourceLocation(FleshCraft.MOD_ID, "block/fluid/liquid_flowing");
@@ -23,13 +27,19 @@ public class FluidResources {
 
     public static final ForgeFlowingFluid.Properties BLOOD_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> RegistryHandler.BLOOD_FLUID.get(), () -> RegistryHandler.BLOOD_FLOWING.get(),
-            FluidAttributes.builder(LIQUID_STILL, LIQUID_FLOWING).color(0xffD10000).density(1200).viscosity(1200)
+            FluidAttributes.builder(BLOOD_STILL, BLOOD_FLOWING).color(0xffD10000).density(1200).viscosity(1200)
                     .temperature(336).sound(SoundEvents.BLOCK_WATER_AMBIENT))
             .block(() -> RegistryHandler.BLOOD_BLOCK.get()).bucket(() -> RegistryHandler.BLOOD_BUCKET.get());
 
     public static final ForgeFlowingFluid.Properties DIGESTIVE_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> RegistryHandler.DIGESTIVE_FLUID.get(), () -> RegistryHandler.DIGESTIVE_FLOWING.get(),
-            FluidAttributes.builder(LIQUID_STILL, LIQUID_FLOWING).color(0xffC1CE5F).density(1200)
+            FluidAttributes.builder(LIQUID_STILL, LIQUID_FLOWING).color(0xffE4CE5F).density(1200)
                     .viscosity(1200).temperature(336).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
             .block(() -> RegistryHandler.DIGESTIVE_BLOCK.get()).bucket(() -> RegistryHandler.DIGESTIVE_BUCKET.get());
+
+    public static final ForgeFlowingFluid.Properties BILE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> RegistryHandler.BILE_FLUID.get(), () -> RegistryHandler.BILE_FLOWING.get(),
+            FluidAttributes.builder(LIQUID_STILL, LIQUID_FLOWING).color(0xffC1CE5F).density(1200)
+                    .viscosity(1200).temperature(336).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
+            .block(() -> RegistryHandler.BILE_BLOCK.get()).bucket(() -> RegistryHandler.BILE_BUCKET.get());
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "fleshcraft:digestive_flowing",
+    "fleshcraft:digestive_fluid",
+    "fleshcraft:bile_flowing",
+    "fleshcraft:bile_fluid"
+  ]
+}
