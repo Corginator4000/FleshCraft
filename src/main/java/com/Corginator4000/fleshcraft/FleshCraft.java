@@ -1,6 +1,8 @@
 package com.Corginator4000.fleshcraft;
 
-import com.Corginator4000.fleshcraft.util.RegistryHandler;
+import com.Corginator4000.fleshcraft.init.FleshCraftBlocks;
+import com.Corginator4000.fleshcraft.init.FleshCraftFluids;
+import com.Corginator4000.fleshcraft.init.FleshCraftItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,7 +27,10 @@ public class FleshCraft
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.Init();
+
+        FleshCraftFluids.FLUIDS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FleshCraftBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FleshCraftItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -40,7 +45,7 @@ public class FleshCraft
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(RegistryHandler.BIOMASS.get());
+            return new ItemStack(FleshCraftItems.BIOMASS.get());
         }
     };
 }
