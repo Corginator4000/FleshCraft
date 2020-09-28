@@ -2,6 +2,7 @@ package com.Corginator4000.fleshcraft.init;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.blocks.BiomassBlock;
+import com.Corginator4000.fleshcraft.blocks.EpithelialBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.material.Material;
@@ -15,6 +16,7 @@ public class FleshCraftBlocks {
 
     // Blocks
     public static final RegistryObject<Block> BIOMASS_BLOCK = BLOCKS.register("biomass_block", BiomassBlock::new);
+    public static final RegistryObject<Block> EPITHELIAL_BLOCK = BLOCKS.register("epithelial_block", EpithelialBlock::new);
 
     // Fluid Block
     public static final RegistryObject<FlowingFluidBlock> BLOOD_BLOCK = BLOCKS.register("blood",

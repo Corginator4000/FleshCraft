@@ -1,5 +1,6 @@
 {
   "item.fleshcraft.biomass": "Biomass",
+  "item.fleshcraft.muscle_tissue": "Muscle Tissue",
   "item.fleshcraft.akuloth_worm": "Akuloth Worm",
   "item.fleshcraft.blood_bucket": "Bucket of Blood",
   "item.fleshcraft.digestive_acid_bucket": "Bucket of Digestive Fluid",
@@ -8,6 +9,6 @@
   "item.fleshcraft.digestive_acid": "Digestive Acid",
   "item.fleshcraft.bile": "Bile",
   "block.fleshcraft.biomass_block": "Block of Biomass",
-  "block.fleshcraft.epithelial_tissue": "Epithelial Tissue",
+  "block.fleshcraft.epithelial_block": "Epithelial Block",
   "itemGroup.fleshcraftTab": "FleshCraft"
 }

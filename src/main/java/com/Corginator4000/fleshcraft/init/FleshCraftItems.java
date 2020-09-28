@@ -16,11 +16,16 @@ public class FleshCraftItems {
 
     // Items
     public static final RegistryObject<Item> BIOMASS = ITEMS.register("biomass", ItemBase::new);
+    public static final RegistryObject<Item> MUSCLE_TISSUE = ITEMS.register("muscle_tissue", ItemBase::new);
     public static final RegistryObject<AkulothWorm> AKULOTH_WORM = ITEMS.register("akuloth_worm", AkulothWorm::new);
 
     // Block Items
     public static final RegistryObject<Item> BIOMASS_BLOCK_ITEM = ITEMS.register("biomass_block",
             () -> new BlockItemBase(FleshCraftBlocks.BIOMASS_BLOCK.get()));
+
+    public static final RegistryObject<Item> EPITHELIAL_BLOCK_ITEM = ITEMS.register("epithelial_block",
+            () -> new BlockItemBase(FleshCraftBlocks.EPITHELIAL_BLOCK.get()));
+
 
     // Fluid Bucket
     public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket",

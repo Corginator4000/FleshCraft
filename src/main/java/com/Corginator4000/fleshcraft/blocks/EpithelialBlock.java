@@ -6,9 +6,9 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class BiomassBlock extends Block {
+public class EpithelialBlock extends Block {
 
-    public BiomassBlock() {
+    public EpithelialBlock() {
         super(AbstractBlock.Properties.create(Material.ORGANIC)
                 .hardnessAndResistance(2.0f, 3.0f)
                 .sound(SoundType.SLIME)
