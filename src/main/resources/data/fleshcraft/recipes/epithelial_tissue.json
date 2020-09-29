@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fleshcraft:epithelial_block"
+    }
+  ],
+  "result":
+  {
+    "item": "fleshcraft:epithelial_tissue",
+    "count": 4
+  }
+}

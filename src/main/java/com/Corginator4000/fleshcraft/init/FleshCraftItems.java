@@ -17,6 +17,7 @@ public class FleshCraftItems {
     // Items
     public static final RegistryObject<Item> BIOMASS = ITEMS.register("biomass", ItemBase::new);
     public static final RegistryObject<Item> MUSCLE_TISSUE = ITEMS.register("muscle_tissue", ItemBase::new);
+    public static final RegistryObject<Item> EPITHELIAL_TISSUE = ITEMS.register("epithelial_tissue", ItemBase::new);
     public static final RegistryObject<AkulothWorm> AKULOTH_WORM = ITEMS.register("akuloth_worm", AkulothWorm::new);
 
     // Block Items
