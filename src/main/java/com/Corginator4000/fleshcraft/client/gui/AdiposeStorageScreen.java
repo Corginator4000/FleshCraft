@@ -20,8 +20,8 @@ public class AdiposeStorageScreen extends ContainerScreen<AdiposeStorageContaine
         super(screenContainer, inv, titleIn);
         this.guiLeft = 0;
         this.guiTop = 0;
-        this.xSize = 247;
-        this.ySize = 255;
+        this.xSize = 175;
+        this.ySize = 219;
     }
 
     @Override
@@ -35,9 +35,8 @@ public class AdiposeStorageScreen extends ContainerScreen<AdiposeStorageContaine
 
     @Override
     protected void drawGuiContainerForegroundLayer(MatrixStack matrixStack, int mouseX, int mouseY) {
-        super.drawGuiContainerForegroundLayer(matrixStack, mouseX, mouseY);
-        //this.font.drawString(matrixStack, this.title.getString(), 8.0f, 6.0f, 4210752);
-        //this.font.drawString(matrixStack, this.playerInventory.getDisplayName().getString(), 8.0f, 90.0f, 4210752);
+        this.font.drawString(matrixStack, this.title.getString(), 8.0f, 6.0f, 4210752);
+        this.font.drawString(matrixStack, this.playerInventory.getDisplayName().getString(), 8.0f, 128.0f, 4210752);
     }
 
     @Override

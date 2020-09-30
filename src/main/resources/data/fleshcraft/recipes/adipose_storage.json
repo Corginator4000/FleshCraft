@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "fleshcraft:white_adipose_block"
+    }
+  },
+  "result":
+  {
+    "item": "fleshcraft:adipose_storage",
+    "count": 1
+  }
+}

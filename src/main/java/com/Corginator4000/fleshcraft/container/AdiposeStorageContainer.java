@@ -26,30 +26,29 @@ public class AdiposeStorageContainer extends Container {
         this.canInteractWithCallable = IWorldPosCallable.of(tileEntity.getWorld(), tileEntity.getPos());
 
         // Main Inventory
-        int startX = 5;
-        int startY = 2;
+        int startX = 8;
+        int startY = 18;
         int slotSizePlus2 = 18;
-        for (int row = 0; row < 9; ++row) {
-            for (int column = 0; column < 12; ++column) {
-                this.addSlot(new Slot(tileEntity, (row * 12) + column, startX + (column * slotSizePlus2),
+        for (int row = 0; row < 6; ++row) {
+            for (int column = 0; column < 9; ++column) {
+                this.addSlot(new Slot(tileEntity, (row * 9) + column, startX + (column * slotSizePlus2),
                         startY + (row * slotSizePlus2)));
             }
         }
 
         // Main Player Inventory
-        int startPlayerInvX = 42;
-        int startPlayerInvY = 177;
+        int startPlayerInvY = 138;
         for (int row = 0; row < 3; ++row) {
             for (int column = 0; column < 9; ++column) {
-                this.addSlot(new Slot(playerInventory, 9 + (row * 9) + column, startPlayerInvX + (column * slotSizePlus2),
+                this.addSlot(new Slot(playerInventory, 9 + (row * 9) + column, startX + (column * slotSizePlus2),
                         startPlayerInvY + (row * slotSizePlus2)));
             }
         }
 
         // Hotbar
-        int hotbarY = 237;
+        int hotbarY = 196;
         for (int column = 0; column < 9; ++column) {
-            this.addSlot(new Slot(playerInventory, column, startPlayerInvX + (column * slotSizePlus2), hotbarY));
+            this.addSlot(new Slot(playerInventory, column, startX + (column * slotSizePlus2), hotbarY));
         }
     }
 
