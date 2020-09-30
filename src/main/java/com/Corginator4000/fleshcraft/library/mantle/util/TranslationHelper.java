@@ -58,7 +58,7 @@ public class TranslationHelper {
      */
     public static void addEachLine(String text, List<ITextComponent> tooltip) {
         for (String string : text.split("\n")) {
-            tooltip.add(new StringTextComponent(string).func_240699_a_(TextFormatting.GRAY));
+            tooltip.add(new StringTextComponent(string).mergeStyle(TextFormatting.GRAY));
         }
     }
 

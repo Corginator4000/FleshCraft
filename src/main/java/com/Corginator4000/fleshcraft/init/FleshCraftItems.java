@@ -27,6 +27,14 @@ public class FleshCraftItems {
     public static final RegistryObject<Item> EPITHELIAL_BLOCK_ITEM = ITEMS.register("epithelial_block",
             () -> new BlockItemBase(FleshCraftBlocks.EPITHELIAL_BLOCK.get()));
 
+    public static final RegistryObject<Item> BROWN_ADIPOSE_BLOCK_ITEM = ITEMS.register("brown_adipose_block",
+            () -> new BlockItemBase(FleshCraftBlocks.BROWN_ADIPOSE_BLOCK.get()));
+
+    public static final RegistryObject<Item> WHITE_ADIPOSE_BLOCK_ITEM = ITEMS.register("white_adipose_block",
+            () -> new BlockItemBase(FleshCraftBlocks.WHITE_ADIPOSE_BLOCK.get()));
+
+    public static final RegistryObject<Item> ADIPOSE_STORAGE_ITEM = ITEMS.register("adipose_storage",
+            () -> new BlockItemBase(FleshCraftBlocks.ADIPOSE_STORAGE.get()));
 
     // Fluid Bucket
     public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket",

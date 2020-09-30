@@ -1,9 +1,6 @@
 package com.Corginator4000.fleshcraft;
 
-import com.Corginator4000.fleshcraft.init.FleshCraftBlocks;
-import com.Corginator4000.fleshcraft.init.FleshCraftFluids;
-import com.Corginator4000.fleshcraft.init.FleshCraftItems;
-import com.Corginator4000.fleshcraft.init.FleshCraftTileEntityTypes;
+import com.Corginator4000.fleshcraft.init.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +30,7 @@ public class FleshCraft
         FleshCraftBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FleshCraftItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FleshCraftTileEntityTypes.TILE_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FleshCraftContainerTypes.CONTAINER_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

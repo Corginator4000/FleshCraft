@@ -135,7 +135,7 @@ public class MultiServantLogic extends MantleTileEntity implements IServantLogic
     //read == .func_230337_a_ since TileEntity was being weird
     //@Override
     public void read(BlockState blockState, CompoundNBT tags) {
-        super.func_230337_a_(blockState, tags);
+        super.read(blockState, tags);
         this.readCustomNBT(tags);
     }
 

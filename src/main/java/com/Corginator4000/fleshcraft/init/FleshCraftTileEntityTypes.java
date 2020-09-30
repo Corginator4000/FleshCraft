@@ -1,7 +1,9 @@
 package com.Corginator4000.fleshcraft.init;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
+import com.Corginator4000.fleshcraft.tileentity.AdiposeStorageTileEntity;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -12,4 +14,8 @@ public class FleshCraftTileEntityTypes {
     /*public static final RegistryObject<TileEntityType<ExampleFurnaceTileEntity>> EXAMPLE_FURNACE = TILE_ENTITY_TYPES
             .register("example_furnace", () -> TileEntityType.Builder
                     .create(ExampleFurnaceTileEntity::new, BlockInit.EXAMPLE_FURNACE.get()).build(null));*/
+
+    public static final RegistryObject<TileEntityType<AdiposeStorageTileEntity>> ADIPOSE_STORAGE = TILE_ENTITY_TYPES
+            .register("adipose_storage", () -> TileEntityType.Builder
+                    .create(AdiposeStorageTileEntity::new, FleshCraftBlocks.ADIPOSE_STORAGE.get()).build(null));
 }
