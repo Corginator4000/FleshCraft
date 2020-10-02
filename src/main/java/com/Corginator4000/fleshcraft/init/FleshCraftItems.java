@@ -33,6 +33,9 @@ public class FleshCraftItems {
     public static final RegistryObject<Item> WHITE_ADIPOSE_BLOCK_ITEM = ITEMS.register("white_adipose_block",
             () -> new BlockItemBase(FleshCraftBlocks.WHITE_ADIPOSE_BLOCK.get()));
 
+    public static final RegistryObject<Item> MUSCLE_BLOCK_ITEM = ITEMS.register("muscle_block",
+            () -> new BlockItemBase(FleshCraftBlocks.MUSCLE_BLOCK.get()));
+
     public static final RegistryObject<Item> ADIPOSE_STORAGE_ITEM = ITEMS.register("adipose_storage",
             () -> new BlockItemBase(FleshCraftBlocks.ADIPOSE_STORAGE.get()));
 

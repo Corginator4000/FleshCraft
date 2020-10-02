@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx",
+    "xx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "fleshcraft:muscle_tissue"
+    }
+  },
+  "result":
+  {
+    "item": "fleshcraft:muscle_block",
+    "count": 1
+  }
+}

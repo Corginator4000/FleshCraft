@@ -13,6 +13,7 @@
   "block.fleshcraft.epithelial_block": "Epithelial Block",
   "block.fleshcraft.brown_adipose_block": "Brown Adipose Block",
   "block.fleshcraft.white_adipose_block": "White Adipose Block",
+  "block.fleshcraft.muscle_block": "Muscle Block",
   "block.fleshcraft.adipose_storage": "Adipose Storage",
   "container.adipose_storage": "Adipose Storage",
   "itemGroup.fleshcraftTab": "FleshCraft"

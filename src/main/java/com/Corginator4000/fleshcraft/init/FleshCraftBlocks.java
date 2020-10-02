@@ -18,6 +18,7 @@ public class FleshCraftBlocks {
     public static final RegistryObject<Block> EPITHELIAL_BLOCK = BLOCKS.register("epithelial_block", EpithelialBlock::new);
     public static final RegistryObject<Block> BROWN_ADIPOSE_BLOCK = BLOCKS.register("brown_adipose_block", BrownAdiposeBlock::new);
     public static final RegistryObject<Block> WHITE_ADIPOSE_BLOCK = BLOCKS.register("white_adipose_block", WhiteAdiposeBlock::new);
+    public static final RegistryObject<Block> MUSCLE_BLOCK = BLOCKS.register("muscle_block", MuscleBlock::new);
 
     // Fluid Block
     public static final RegistryObject<FlowingFluidBlock> BLOOD_BLOCK = BLOCKS.register("blood",
