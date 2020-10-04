@@ -3,7 +3,6 @@ package com.Corginator4000.fleshcraft.init;
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.blocks.BlockItemBase;
 import com.Corginator4000.fleshcraft.items.AkulothWorm;
-import com.Corginator4000.fleshcraft.items.ItemBase;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -15,9 +14,15 @@ public class FleshCraftItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FleshCraft.MOD_ID);
 
     // Items
-    public static final RegistryObject<Item> BIOMASS = ITEMS.register("biomass", ItemBase::new);
-    public static final RegistryObject<Item> MUSCLE_TISSUE = ITEMS.register("muscle_tissue", ItemBase::new);
-    public static final RegistryObject<Item> EPITHELIAL_TISSUE = ITEMS.register("epithelial_tissue", ItemBase::new);
+    public static final RegistryObject<Item> BIOMASS = ITEMS.register("biomass",
+            () -> new Item(new Item.Properties().group(FleshCraft.TAB)));
+
+    public static final RegistryObject<Item> MUSCLE_TISSUE = ITEMS.register("muscle_tissue",
+            () -> new Item(new Item.Properties().group(FleshCraft.TAB)));
+
+    public static final RegistryObject<Item> EPITHELIAL_TISSUE = ITEMS.register("epithelial_tissue",
+            () -> new Item(new Item.Properties().group(FleshCraft.TAB)));
+
     public static final RegistryObject<AkulothWorm> AKULOTH_WORM = ITEMS.register("akuloth_worm", AkulothWorm::new);
 
     // Block Items

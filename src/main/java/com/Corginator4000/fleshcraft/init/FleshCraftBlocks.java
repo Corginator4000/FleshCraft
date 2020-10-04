@@ -3,6 +3,7 @@ package com.Corginator4000.fleshcraft.init;
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.blocks.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.RegistryObject;
@@ -36,4 +37,7 @@ public class FleshCraftBlocks {
     //Tile Entity
     public static final RegistryObject<Block> ADIPOSE_STORAGE = BLOCKS.register("adipose_storage",
             () -> new AdiposeStorageBlock(Block.Properties.from(WHITE_ADIPOSE_BLOCK.get())));
+
+    public static final RegistryObject<Block> ENDOTHERMIC_FURNACE = BLOCKS.register("example_furnace",
+            () -> new EndothermicFurnaceBlock(Block.Properties.from(Blocks.FURNACE)));
 }
