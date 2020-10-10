@@ -16,7 +16,7 @@ import org.apache.logging.log4j.Logger;
 public class FleshCraft
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "fleshcraft";
 
     public FleshCraft() {
@@ -25,11 +25,14 @@ public class FleshCraft
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-
         FleshCraftFluids.FLUIDS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FleshCraftBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FleshCraftSpecialBlocks.SPECIAL_BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FleshCraftItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FleshCraftSpecialItems.SPECIAL_ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FleshCraftRecipeSerializers.RECIPE_SERIALIZERS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FleshCraftTileEntityTypes.TILE_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FleshCraftSpecialTileEntity.SPECIAL_TILE_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
         FleshCraftContainerTypes.CONTAINER_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register ourselves for server and other game events we are interested in

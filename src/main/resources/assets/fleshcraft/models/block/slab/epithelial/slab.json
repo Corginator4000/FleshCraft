@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "fleshcraft:blocks/epithelial_block",
+    "top": "fleshcraft:blocks/epithelial_block",
+    "side": "fleshcraft:blocks/epithelial_block"
+  }
+}

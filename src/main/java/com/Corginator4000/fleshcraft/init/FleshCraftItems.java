@@ -20,8 +20,8 @@ public class FleshCraftItems {
     public static final RegistryObject<Item> MUSCLE_TISSUE = ITEMS.register("muscle_tissue",
             () -> new Item(new Item.Properties().group(FleshCraft.TAB)));
 
-    public static final RegistryObject<Item> EPITHELIAL_TISSUE = ITEMS.register("epithelial_tissue",
-            () -> new Item(new Item.Properties().group(FleshCraft.TAB)));
+    /*public static final RegistryObject<Item> EPITHELIAL_TISSUE = ITEMS.register("epithelial_tissue",
+            () -> new Item(new Item.Properties().group(FleshCraft.TAB)));*/
 
     public static final RegistryObject<AkulothWorm> AKULOTH_WORM = ITEMS.register("akuloth_worm", AkulothWorm::new);
 
@@ -29,8 +29,8 @@ public class FleshCraftItems {
     public static final RegistryObject<Item> BIOMASS_BLOCK_ITEM = ITEMS.register("biomass_block",
             () -> new BlockItemBase(FleshCraftBlocks.BIOMASS_BLOCK.get()));
 
-    public static final RegistryObject<Item> EPITHELIAL_BLOCK_ITEM = ITEMS.register("epithelial_block",
-            () -> new BlockItemBase(FleshCraftBlocks.EPITHELIAL_BLOCK.get()));
+    /*public static final RegistryObject<Item> EPITHELIAL_BLOCK_ITEM = ITEMS.register("epithelial_block",
+            () -> new BlockItemBase(FleshCraftSpecialBlocks.EPITHELIAL_BLOCK.get()));*/
 
     public static final RegistryObject<Item> BROWN_ADIPOSE_BLOCK_ITEM = ITEMS.register("brown_adipose_block",
             () -> new BlockItemBase(FleshCraftBlocks.BROWN_ADIPOSE_BLOCK.get()));

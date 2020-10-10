@@ -2,6 +2,7 @@ package com.Corginator4000.fleshcraft.init;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.tileentity.AdiposeStorageTileEntity;
+import com.Corginator4000.fleshcraft.tileentity.ChamberComponentTileEntity;
 import com.Corginator4000.fleshcraft.tileentity.EndothermicFurnaceTileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
@@ -19,4 +20,5 @@ public class FleshCraftTileEntityTypes {
     public static final RegistryObject<TileEntityType<AdiposeStorageTileEntity>> ADIPOSE_STORAGE = TILE_ENTITY_TYPES
             .register("adipose_storage", () -> TileEntityType.Builder
                     .create(AdiposeStorageTileEntity::new, FleshCraftBlocks.ADIPOSE_STORAGE.get()).build(null));
+
 }

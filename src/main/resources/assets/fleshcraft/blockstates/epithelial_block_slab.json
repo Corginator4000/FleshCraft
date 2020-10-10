@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "fleshcraft:block/slab/epithelial/slab" },
+    "type=top": { "model": "fleshcraft:block/slab/epithelial/slab_top" },
+    "type=double": { "model": "fleshcraft:block/epithelial_block" }
+  }
+}
