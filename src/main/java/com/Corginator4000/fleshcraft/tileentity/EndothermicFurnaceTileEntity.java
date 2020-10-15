@@ -2,6 +2,7 @@ package com.Corginator4000.fleshcraft.tileentity;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.blocks.EndothermicFurnaceBlock;
+import com.Corginator4000.fleshcraft.container.EndothermicFurnaceContainer;
 import com.Corginator4000.fleshcraft.init.FleshCraftRecipeSerializers;
 import com.Corginator4000.fleshcraft.init.FleshCraftTileEntityTypes;
 import com.Corginator4000.fleshcraft.recipes.FleshCraftRecipe;
@@ -63,15 +64,9 @@ public class EndothermicFurnaceTileEntity extends TileEntity implements ITickabl
         this(FleshCraftTileEntityTypes.ENDOTHERMIC_FURNACE.get());
     }
 
-    /*@Override
+    @Override
     public Container createMenu(final int windowID, final PlayerInventory playerInv, final PlayerEntity playerIn) {
         return new EndothermicFurnaceContainer(windowID, playerInv, this);
-    }*/
-
-    //empty filler method
-    @Override
-    public Container createMenu(int p_createMenu_1_, PlayerInventory p_createMenu_2_, PlayerEntity p_createMenu_3_) {
-        return null;
     }
 
     //TODO: isBlockPowered should be changed later to fuel for use of fluid fuel

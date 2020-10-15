@@ -38,6 +38,6 @@ public class FleshCraftBlocks {
     public static final RegistryObject<Block> ADIPOSE_STORAGE = BLOCKS.register("adipose_storage",
             () -> new AdiposeStorageBlock(Block.Properties.from(WHITE_ADIPOSE_BLOCK.get())));
 
-    public static final RegistryObject<Block> ENDOTHERMIC_FURNACE = BLOCKS.register("example_furnace",
+    public static final RegistryObject<Block> ENDOTHERMIC_FURNACE = BLOCKS.register("endothermic_furnace",
             () -> new EndothermicFurnaceBlock(Block.Properties.from(Blocks.FURNACE)));
 }

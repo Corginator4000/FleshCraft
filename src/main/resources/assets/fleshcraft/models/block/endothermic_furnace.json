@@ -1,0 +1,9 @@
+
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "fleshcraft:blocks/endothermic_furnace_top",
+    "front": "fleshcraft:blocks/endothermic_furnace_front",
+    "side": "fleshcraft:blocks/endothermic_furnace_side"
+  }
+}

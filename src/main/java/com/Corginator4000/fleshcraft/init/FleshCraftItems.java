@@ -44,6 +44,9 @@ public class FleshCraftItems {
     public static final RegistryObject<Item> ADIPOSE_STORAGE_ITEM = ITEMS.register("adipose_storage",
             () -> new BlockItemBase(FleshCraftBlocks.ADIPOSE_STORAGE.get()));
 
+    public static final RegistryObject<Item> ENDOTHERMIC_FURNACE_ITEM = ITEMS.register("endothermic_furnace",
+            () -> new BlockItemBase(FleshCraftBlocks.ENDOTHERMIC_FURNACE.get()));
+
     // Fluid Bucket
     public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket",
             () -> new BucketItem(() -> FleshCraftFluids.BLOOD_FLUID.get(),

@@ -2,6 +2,7 @@ package com.Corginator4000.fleshcraft.util;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.client.gui.AdiposeStorageScreen;
+import com.Corginator4000.fleshcraft.client.gui.EndothermicFurnaceScreen;
 import com.Corginator4000.fleshcraft.init.FleshCraftContainerTypes;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,5 +15,6 @@ public class ClientEventBusSubscriber {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event){
         ScreenManager.registerFactory(FleshCraftContainerTypes.ADIPOSE_STORAGE.get(), AdiposeStorageScreen::new);
+        ScreenManager.registerFactory(FleshCraftContainerTypes.ENDOTHERMIC_FURNACE.get(), EndothermicFurnaceScreen::new);
     }
 }
