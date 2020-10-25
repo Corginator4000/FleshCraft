@@ -20,7 +20,7 @@ public class FleshCraftSpecialBlocks {
 
     private static final Function<Block,? extends BlockItem> TOOLTIP_BLOCK_ITEM = (b) -> new BlockTooltipItem(b, new Item.Properties().group(FleshCraft.TAB));
 
-    private static final Block.Properties DIGESTIVE_CHAMBER = FleshCraftHelper.builder(Material.ROCK, ToolType.AXE, SoundType.METAL).hardnessAndResistance(3.0F, 9.0F);
+    private static final Block.Properties DIGESTIVE_CHAMBER = FleshCraftHelper.builder(Material.ORGANIC, ToolType.AXE, SoundType.SLIME).hardnessAndResistance(3.0F, 9.0F);
 
     public static final BuildingBlockObject EPITHELIAL_BLOCK = SPECIAL_BLOCKS.registerBuilding("epithelial_block", DIGESTIVE_CHAMBER, TOOLTIP_BLOCK_ITEM);
 
