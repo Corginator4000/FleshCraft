@@ -2,7 +2,6 @@ package com.Corginator4000.fleshcraft.init;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.tileentity.AdiposeStorageTileEntity;
-import com.Corginator4000.fleshcraft.tileentity.ChamberComponentTileEntity;
 import com.Corginator4000.fleshcraft.tileentity.EndothermicFurnaceTileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;

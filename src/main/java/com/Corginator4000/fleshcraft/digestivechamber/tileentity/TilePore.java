@@ -1,20 +1,15 @@
-package com.Corginator4000.fleshcraft.tileentity;
+package com.Corginator4000.fleshcraft.digestivechamber.tileentity;
 
+import com.Corginator4000.fleshcraft.digestivechamber.tileentity.ChamberComponentTileEntity;
 import com.Corginator4000.fleshcraft.library.IDigestiveTankHandler;
 
-import net.minecraft.state.DirectionProperty;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
-
-import javax.annotation.Nonnull;
 import java.lang.ref.WeakReference;
-import javax.annotation.Nullable;
 
 /**
  * TODO: ALlows I/O from chamber tank
  */
 
-public class TilePore extends ChamberComponentTileEntity{
+public class TilePore extends ChamberComponentTileEntity {
 
     //private FluidHandlerExtractOnlyWrapper drainFluidHandler;
     private WeakReference<IDigestiveTankHandler> oldChamberTank;

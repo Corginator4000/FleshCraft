@@ -1,17 +1,14 @@
-package com.Corginator4000.fleshcraft.blocks;
+package com.Corginator4000.fleshcraft.digestivechamber.blocks;
 
-import net.minecraft.block.AbstractBlock;
+import com.Corginator4000.fleshcraft.digestivechamber.blocks.EpithelialBlock;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.common.ToolType;
 
-public class EpithelialMembraneBlock extends EpithelialBlock{
+public class EpithelialMembraneBlock extends EpithelialBlock {
 
     public EpithelialMembraneBlock(Properties properties) {
         super(properties);

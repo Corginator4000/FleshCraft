@@ -2,11 +2,9 @@ package com.Corginator4000.fleshcraft.init;
 
 import com.Corginator4000.fleshcraft.FleshCraft;
 import com.Corginator4000.fleshcraft.library.registration.TileEntityTypeDeferredRegister;
-import com.Corginator4000.fleshcraft.library.mantle.registration.object.BuildingBlockObject;
-import com.Corginator4000.fleshcraft.tileentity.ChamberComponentTileEntity;
+import com.Corginator4000.fleshcraft.digestivechamber.tileentity.ChamberComponentTileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
-import com.google.common.collect.ImmutableSet;
 
 public class FleshCraftSpecialTileEntity {
 

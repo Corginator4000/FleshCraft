@@ -1,4 +1,4 @@
-package com.Corginator4000.fleshcraft.tileentity;
+package com.Corginator4000.fleshcraft.digestivechamber.tileentity;
 
 import com.Corginator4000.fleshcraft.library.IDigestiveTankHandler;
 import com.Corginator4000.fleshcraft.library.mantle.multiblock.MultiServantLogic;

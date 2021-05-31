@@ -1,13 +1,10 @@
-package com.Corginator4000.fleshcraft.blocks;
+package com.Corginator4000.fleshcraft.digestivechamber.blocks;
 
 import com.Corginator4000.fleshcraft.library.mantle.multiblock.IMasterLogic;
 import com.Corginator4000.fleshcraft.library.mantle.multiblock.IServantLogic;
-import com.Corginator4000.fleshcraft.tileentity.ChamberComponentTileEntity;
-import net.minecraft.block.AbstractBlock;
+import com.Corginator4000.fleshcraft.digestivechamber.tileentity.ChamberComponentTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -15,7 +12,6 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
-import net.minecraftforge.common.ToolType;
 
 import javax.annotation.Nullable;
 
